@@ -38,14 +38,14 @@
           <div class="h010"></div>
         </div>
         <div class="ui-tabstwo">
-        		<div class="tab active">
+        		<div class="tab active" id="sy">
         			收益记录
         		</div>
-        		<div class="tab">
+        		<div class="tab" id="tx">
         			提现记录
         		</div>
         </div>
-        <div class="ui-walletlist">
+        <div class="ui-walletlist" id="shouyi">
           <ul>
             <li>
               <div class="i">
@@ -85,6 +85,66 @@
             </li>
           </ul>
         </div>
+      	<div class="ui-walletlist dis-none" id="tixian">
+      		<ul>
+      			<li>
+      				<div class="i">
+		                <h3>
+		                  <span class="pull-right">2016-12-12  12:12</span>
+		                  1212元
+		                </h3>
+		        		</div>
+      			</li>
+      			<li>
+      				<div class="i">
+		                <h3>
+		                  <span class="pull-right">2016-12-12  12:12</span>
+		                  1212元
+		                </h3>
+		        		</div>
+      			</li>
+      			<li>
+      				<div class="i">
+		                <h3>
+		                  <span class="pull-right">2016-12-12  12:12</span>
+		                  1212元
+		                </h3>
+		        		</div>
+      			</li>
+      			<li>
+      				<div class="i">
+		                <h3>
+		                  <span class="pull-right">2016-12-12  12:12</span>
+		                  1212元
+		                </h3>
+		        		</div>
+      			</li>
+      			<li>
+      				<div class="i">
+		                <h3>
+		                  <span class="pull-right">2016-12-12  12:12</span>
+		                  1212元
+		                </h3>
+		        		</div>
+      			</li>
+      			<li>
+      				<div class="i">
+		                <h3>
+		                  <span class="pull-right">2016-12-12  12:12</span>
+		                  1212元
+		                </h3>
+		        		</div>
+      			</li>
+      			<li>
+      				<div class="i">
+		                <h3>
+		                  <span class="pull-right">2016-12-12  12:12</span>
+		                  1212元
+		                </h3>
+		        		</div>
+      			</li>
+      		</ul>
+      	</div>
       </div>
     </main>
     <!-------------------------------------- 内容结束 -------------------------------------->
@@ -131,6 +191,20 @@
 </style>
 <script>
   $(function(){
-    
+  		var tab = $(".ui-tabstwo .tab")
+  	
+  		$("#sy").click(function(){
+  			tab.removeClass('active');
+  			$(this).addClass('active');
+  			$("#shouyi").removeClass('dis-none');
+  			$("#tixian").addClass('dis-none')
+  		})
+  		
+  		$("#tx").click(function(){
+  			tab.removeClass('active');
+  			$(this).addClass('active');
+  			$("#tixian").removeClass('dis-none');
+			$("#shouyi").addClass('dis-none')
+  		})
   });
 </script>
