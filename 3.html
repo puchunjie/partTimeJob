@@ -107,5 +107,13 @@
 	var winHeight = $(window).height();
 	var conHeight = winHeight - $("header").height() - $(".btn-give").height();
 	$("#content").height(conHeight);
+	
+	
+	var $quota = $(".quota");
+	var $quotas = $(".quota a");
+	$quota.on('click','a',function(){
+		$quotas.removeClass('active');
+		$(this).addClass('active')
+	})
   });
 </script>
