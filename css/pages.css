@@ -649,8 +649,8 @@
 .ui-tatistics{
 	position: relative;
 	width: 100%;
-	height: 5.5rem;
 	background-color: #fff;
+    padding-bottom: .5rem;
 }
 
 .parting-line{
@@ -2703,11 +2703,9 @@
 
 .photo-contnet{
 	position: fixed;
-	width: 64%;
-	height: 17.5rem;
+    padding: 1rem;
 	background-color: rgba(0, 0, 0, 0.6);
 	bottom: 15rem;
-	left: 18%;
 	color: #fff;
 	border-radius: .3rem;
 }
@@ -2721,9 +2719,20 @@
 
 .photo-contnet p{
 	font-size: 1.2rem;
-	width: 16.5rem;
 	margin: 0 auto;
 }
 .dis-none{
 	display: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+.clearfix {
+  *+height: 1%;
 }

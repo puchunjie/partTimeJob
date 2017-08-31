@@ -109,7 +109,11 @@
   $(function(){
 //	计算container的高度
 	var winHeight = $(window).height();
+    var winWid = $(window).width();
 	var conHeight = winHeight - $("header").height() - $(".btn-give").height();
 	$("#content").height(conHeight);
+
+    var left = (winWid - $(".photo-contnet").width())/2 - 10
+    $(".photo-contnet").css('left',left);
   });
 </script>
