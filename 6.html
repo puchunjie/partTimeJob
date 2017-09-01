@@ -16,126 +16,75 @@
     <script type="text/javascript" src="js/main.js"></script>
     <!--plugin-->
   </head>
-  <body>
+  <body class="no-footer">
     <!-------------------------------------- 头部开始 -------------------------------------->
     <header>
       <div class="container">
         <div class="head">
-          <p>我的</p>
+          <a href="" class="bt back"></a>
+          <p>主页</p>
         </div>
       </div>
     </header>
     <!-------------------------------------- 头部结束 -------------------------------------->
     <!-------------------------------------- 内容开始 -------------------------------------->
     <main>
-      <div class="container">
-        <div class="ui-mineinfo">
-          <div class="cont"><img src="img/img_avatar1.jpg" alt="">
-            <div class="ct">
-              <p>张宇峰</p>
-              <p>id：12345678</p>
-            </div>
-            <div class="ex">
-              <a>前往主页&rsaquo;</a>
-            </div>
-          </div>
-        </div>
-        <div class="ui-tatistics clearfix">
-        		<div class="parting-line"></div>
-        		<div class="half">
-        			<p class="number">121</p>
-        			<p class="word">感谢信</p>
+      <div class="container main-bg" id="content">
+      	<div class="float-head">
+      		<img src="img/img_avatar1.jpg"/>
+      		主页君
+      		<span>1212</span>
+      	</div>
+        <!--选择金额-->
+        <div class="money-content">
+        	<textarea rows="2" placeholder="想给你写一句感谢的话！"></textarea>
+        	<div class="ui-tips">
+        		<div class="money-title">
+        			<img src="img/ico-money.png"/>
+        			<p>小费</p>
         		</div>
-        		<div class="half">
-        			<p class="number">122.33</p>
-        			<p class="word">小费</p>
+        		<div class="quota">
+        			<a>无</a>
+        			<a class="active">0.5元</a>
+        			<a>1元</a>
+        			<a>2元</a>
         		</div>
+        	</div>
         </div>
-        <div class="h005"></div>
-        <div class="ui-nmlist ui-minemenu">
-          <ul>
-            <li>
-              <div class="i">
-                <p>
-                  <a href=""><img src="img/ico-menumine4.png" alt="">
-                    <span class="pull-right">
-                      当前尚未代言店铺
-                    </span>
-                    我代言的店铺
-                  </a>
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="i">
-                <p>
-                  <a href=""><img src="img/ico-tijiaodianpu.jpg" alt="">
-                    我提交的店铺
-                  </a>
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="i">
-                <p>
-                  <a href=""><img src="img/ico-woderenzheng.png" alt="">
-                    我认证的店铺
-                  </a>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="h005"></div>
-        <div class="ui-nmlist ui-minemenu">
-          <ul>
-            <li>
-              <div class="i">
-                <p>
-                  <a href=""><img src="img/ico-ganxie_03.png" alt="">
-                    我的感谢
-                  </a>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="h005"></div>
-        <div class="ui-nmlist ui-minemenu">
-          <ul>
-            <li>
-              <div class="i">
-                <p>
-                  <a href=""><img src="img/ico-menumine2.png" alt="">
-                    联系我们
-                  </a>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+		<div class="dots">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>        
+        <div class="btn-give">感谢并给小费</a>
       </div>
     </main>
     <!-------------------------------------- 内容结束 -------------------------------------->
     <!-------------------------------------- 尾部开始 -------------------------------------->
     <footer>
       <div class="container">
-        <div class="foot three">
+        <div class="foot">
           <ul>
             <li>
-              <a href="" class="i">
+              <a href="" class="i on">
                 <p><i class="ico1"></i></p>
-                <p>会员卡</p>
+                <p>我有会员卡</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="i">
+                <p><i class="ico2"></i></p>
+                <p>画报</p>
               </a>
             </li>
             <li>
               <a href="" class="i">
                 <p><i class="ico3"></i></p>
-                <p>店铺</p>
+                <p>小组</p>
               </a>
             </li>
             <li>
-              <a href="" class="i on">
+              <a href="" class="i">
                 <p><i class="ico4"></i></p>
                 <p>我的</p>
               </a>
@@ -154,6 +103,17 @@
 </style>
 <script>
   $(function(){
-    
+//	计算container的高度
+	var winHeight = $(window).height();
+	var conHeight = winHeight - $("header").height() - $(".btn-give").height();
+	$("#content").height(conHeight);
+	
+	
+	var $quota = $(".quota");
+	var $quotas = $(".quota a");
+	$quota.on('click','a',function(){
+		$quotas.removeClass('active');
+		$(this).addClass('active')
+	})
   });
 </script>
