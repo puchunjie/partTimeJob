@@ -109,185 +109,208 @@ table {
     background-repeat: no-repeat;
     overflow: hidden;
     -webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
-
-.dialog .inner-div{
-	position: relative;
-	width: 100%;
-	height: 100%;
+.dialog .inner-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.dialog .inner-div.hover1{
-	background-image: url(../imgs/1.png);
-}
-.dialog .inner-div.hover2{
-	background-image: url(../imgs/2.png);
-}
-.dialog .inner-div.hover3{
-	background-image: url(../imgs/3.png);
-}
-.dialog .inner-div.hover4{
-	background-image: url(../imgs/4.png);
-}
-.dialog .inner-div.hover5{
-	background-image: url(../imgs/5.png);
-}
-.dialog .inner-div.hover6{
-	background-image: url(../imgs/6.png);
-}
-.dialog .inner-div.hover7{
-	background-image: url(../imgs/7.png);
-}
-.dialog .inner-div.hover8{
-	background-image: url(../imgs/8.png);
-}
-.dialog .inner-div.hover9{
-	background-image: url(../imgs/9.png);
+.dialog .inner-div.hover1 {
+    background-image: url(../imgs/1.png);
 }
 
-
-.dialog .qu{
-	position: absolute;
-	cursor: pointer;
+.dialog .inner-div.hover2 {
+    background-image: url(../imgs/2.png);
 }
-.dialog .qu1{
-	width: 21%;
+
+.dialog .inner-div.hover3 {
+    background-image: url(../imgs/3.png);
+}
+
+.dialog .inner-div.hover4 {
+    background-image: url(../imgs/4.png);
+}
+
+.dialog .inner-div.hover5 {
+    background-image: url(../imgs/5.png);
+}
+
+.dialog .inner-div.hover6 {
+    background-image: url(../imgs/6.png);
+}
+
+.dialog .inner-div.hover7 {
+    background-image: url(../imgs/7.png);
+}
+
+.dialog .inner-div.hover8 {
+    background-image: url(../imgs/8.png);
+}
+
+.dialog .inner-div.hover9 {
+    background-image: url(../imgs/9.png);
+}
+
+.dialog .qu {
+    position: absolute;
+    cursor: pointer;
+}
+
+.dialog .qu1 {
+    width: 21%;
     height: 28%;
     left: 12%;
     top: 20%;
     z-index: 100;
 }
-.dialog .qu2{
-	width: 29%;
+
+.dialog .qu2 {
+    width: 29%;
     height: 23%;
     left: 32.5%;
     top: 21%;
     z-index: 101;
 }
-.dialog .qu3{
-	width: 29%;
+
+.dialog .qu3 {
+    width: 29%;
     height: 23%;
     left: 66.5%;
     top: 26%;
     z-index: 102;
 }
-.dialog .qu4{
-	    width: 5%;
+
+.dialog .qu4 {
+    width: 5%;
     height: 20%;
     left: 59%;
     top: 21%;
     z-index: 103;
 }
-.dialog .qu5{
-	    width: 36%;
+
+.dialog .qu5 {
+    width: 36%;
     height: 29%;
     left: 27%;
     top: 41%;
     z-index: 104;
 }
-.dialog .qu6{
-	    width: 22%;
+
+.dialog .qu6 {
+    width: 22%;
     height: 14%;
     left: 40%;
     top: 56%;
     z-index: 105;
 }
 
-.dialog .qu7{
-	    width: 21%;
+.dialog .qu7 {
+    width: 21%;
     height: 11%;
     left: 39.5%;
-    top: 71%; 
+    top: 71%;
     z-index: 106;
 }
-.dialog .qu8{
-	    width: 33%;
+
+.dialog .qu8 {
+    width: 33%;
     height: 24%;
     left: 12%;
-    top: 71%; 
+    top: 71%;
     z-index: 108;
 }
-.dialog .qu9{
-	    width: 15%;
+
+.dialog .qu9 {
+    width: 15%;
     height: 32%;
     left: 8%;
     top: 52%;
     z-index: 107;
 }
 
-.dialog .tip{
-	position: absolute;
-	width: 150px;
-	height: 75px;
-	border-radius: 5px;
-	background-color: #fff;
-	box-shadow: 0 4px 6px #ddd;
-	font-size: 12px;
-	text-align: center;
-	padding: 10px;
-	box-sizing: border-box;
-	display: none;
+.dialog .tip {
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px #ddd;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
 }
-.dialog .tip .p2{
-	margin-top: 10px;
+
+.dialog .tip .p2 {
+    margin-top: 10px;
 }
-.dialog .tip1{
-	    left: 14%;
+
+.dialog .tip1 {
+    left: 14%;
     top: 28%;
 }
-.dialog .tip2{
-	left: 40%;
+
+.dialog .tip2 {
+    left: 40%;
     top: 19%;
 }
-.dialog .tip4{
-	left: 55%;
+
+.dialog .tip4 {
+    left: 55%;
     top: 19%;
 }
-.dialog .tip3{
-	left: 72%;
+
+.dialog .tip3 {
+    left: 72%;
     top: 27%;
 }
-.dialog .tip5{
-	    left: 25%;
+
+.dialog .tip5 {
+    left: 25%;
     top: 53%;
 }
-.dialog .tip6{
-	left: 44%;
+
+.dialog .tip6 {
+    left: 44%;
     top: 57%;
 }
-.dialog .tip7{
-	    left: 44%;
+
+.dialog .tip7 {
+    left: 44%;
     top: 72%;
 }
-.dialog .tip8{
-	    left: 25%;
+
+.dialog .tip8 {
+    left: 25%;
     top: 80%;
 }
-.dialog .tip9{
-	    left: 9%;
+
+.dialog .tip9 {
+    left: 9%;
     top: 55%;
 }
-.dialog .close{
-	position: absolute;
-	width: 3%;
-	height: 5%;
-	right: 0;
-	top: 0;
-	cursor: pointer;
+
+.dialog .close {
+    position: absolute;
+    width: 3%;
+    height: 5%;
+    right: 0;
+    top: 0;
+    cursor: pointer;
 }
 
-
-
 .dialog-phone {
-	display: none;
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -297,118 +320,122 @@ table {
     background-image: url(../imgs/phone_bg.png);
     background-position: center;
     background-size: cover;
-    background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
     -webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
-.dialog-phone .inner-div{
-	position: relative;
-	width: 100%;
-	height: 100%;
+.dialog-phone .inner-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-
-
-.dialog-phone .qu{
-	position: absolute;
-	cursor: pointer;
-}
-.dialog-phone .qu1{
-	width: 21%;
-	height: 14%;
-	left: 6%;
-	top: 25%;
-	z-index: 100;
-}
-.dialog-phone .qu2{
-	width: 29%;
-	height: 9%;
-	left: 29.5%;
-	top: 26%;
-	z-index: 101;
-}
-.dialog-phone .qu3{
-	width: 32%;
-	height: 12%;
-	left: 66.5%;
-	top: 26%;
-	z-index: 102;
-}
-.dialog-phone .qu4{
-	    width: 5%;
-	    height: 10%;
-	    left: 59%;
-	    top: 25%;
-	    z-index: 103;
-}
-.dialog-phone .qu5{
-	    width: 40%;
-	    height: 14%;
-	    left: 22%;
-	    top: 35%;
-	    z-index: 104;
-}
-.dialog-phone .qu6{
-	    width: 26%;
-	    height: 7%;
-	    left: 36%;
-	    top: 42%;
-	    z-index: 105;
+.dialog-phone .qu {
+    position: absolute;
+    cursor: pointer;
 }
 
-.dialog-phone .qu7{
-	    width: 23%;
-	    height: 5%;
-	    left: 36.5%;
-	    top: 49%;
-	    z-index: 106;
-}
-.dialog-phone .qu8{
-	    width: 38%;
-	    height: 12%;
-	    left: 5%;
-	    top: 49%;
-	    z-index: 108;
-}
-.dialog-phone .qu9{
-	    width: 19%;
-	    height: 15%;
-	    left: 1%;
-	    top: 40%;
-	    z-index: 107;
+.dialog-phone .qu1 {
+    width: 21%;
+    height: 14%;
+    left: 6%;
+    top: 25%;
+    z-index: 100;
 }
 
-.dialog-phone .tip{
-	position: absolute;
-	bottom: 6%;
-	height: 13%;
-	width: 85%;
-	left: 7.5%;
-	background-color: #f2f2f2;
-	border-radius: 100px;
-	box-sizing: border-box;
-	font-size: 12px;
-	text-align: center;
-	padding: 5% 0;
+.dialog-phone .qu2 {
+    width: 29%;
+    height: 9%;
+    left: 29.5%;
+    top: 26%;
+    z-index: 101;
 }
 
-
-.dialog-phone .tip .p1{
-	font-weight: bold;
+.dialog-phone .qu3 {
+    width: 32%;
+    height: 12%;
+    left: 66.5%;
+    top: 26%;
+    z-index: 102;
 }
 
-.dialog-phone .active{
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	bottom: 21%;
+.dialog-phone .qu4 {
+    width: 5%;
+    height: 10%;
+    left: 59%;
+    top: 25%;
+    z-index: 103;
+}
+
+.dialog-phone .qu5 {
+    width: 40%;
+    height: 14%;
+    left: 22%;
+    top: 35%;
+    z-index: 104;
+}
+
+.dialog-phone .qu6 {
+    width: 26%;
+    height: 7%;
+    left: 36%;
+    top: 42%;
+    z-index: 105;
+}
+
+.dialog-phone .qu7 {
+    width: 23%;
+    height: 5%;
+    left: 36.5%;
+    top: 49%;
+    z-index: 106;
+}
+
+.dialog-phone .qu8 {
+    width: 38%;
+    height: 12%;
+    left: 5%;
+    top: 49%;
+    z-index: 108;
+}
+
+.dialog-phone .qu9 {
+    width: 19%;
+    height: 15%;
+    left: 1%;
+    top: 40%;
+    z-index: 107;
+}
+
+.dialog-phone .tip {
+    position: absolute;
+    bottom: 6%;
+    height: 13%;
+    width: 85%;
+    left: 7.5%;
+    background-color: #f2f2f2;
+    border-radius: 100px;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.dialog-phone .tip .p1 {
+    font-weight: bold;
+}
+
+.dialog-phone .active {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 21%;
 }
